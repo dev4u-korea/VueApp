@@ -9,4 +9,17 @@ https://cdnjs.com/libraries/bootstrap
 npm install vue
 npm install vue-cli
 npm install axios
+
+```
+
+```txt
+npm install --save ag-grid-community
+npm install --save ag-grid-vue3
+
+app.vue
+import 'ag-grid-community/styles/ag-grid.css'; // Core grid CSS, always needed
+import 'ag-grid-community/styles/ag-theme-alpine.css'; // Optional theme CSS
+
+    "ag-grid-community": "30.2.1",
+    "ag-grid-vue3": "30.2.1",
 ```

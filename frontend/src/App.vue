@@ -9,6 +9,8 @@
 import Header from "@/components/Header.vue";
 import Home from "@/pages/Home.vue";
 import Footer from "@/components/Footer.vue";
+import 'ag-grid-community/styles/ag-grid.css'; // Core grid CSS, always needed
+import 'ag-grid-community/styles/ag-theme-alpine.css'; // Optional theme CSS
 
 export default {
   name: 'App',
@@ -19,6 +21,7 @@ export default {
   }
 }
 </script>
+
 
 <style>
 .bd-placeholder-img {
