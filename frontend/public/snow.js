@@ -30,10 +30,12 @@ function snow() {
             x2 = flake.x,
             y2 = flake.y;
 
+        // 눈꽃송이와 마우스 좌표의 직선의 거리 구하기. 유클리드 거리 공식
         let dist = Math.sqrt((x2 - x) * (x2 - x) + (y2 - y) * (y2 - y));
            // dx = x2 - x,
            // dy = y2 - y;
 
+        // 마우스 좌표 근처에 있는거 판단.
         if (dist < minDist) {
             let force = minDist / (dist * dist),
                 xcomp = (x - x2) / dist,
@@ -58,7 +60,6 @@ function snow() {
         if (flake.y >= canvas.height || flake.y <= 0) {
             reset(flake);
         }
-
 
         if (flake.x >= canvas.width || flake.x <= 0) {
             reset(flake);
